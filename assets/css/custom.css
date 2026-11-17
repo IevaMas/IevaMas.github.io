@@ -14,10 +14,10 @@
   --nav-font: "Montserrat", sans-serif;
 
   --default-color: #1f2933;     /* pagrindinis tekstas */
-  --heading-color: #12355b;     /* antraštės – tamsiai mėlyna */
-  --accent-color: #0f766e;      /* akcentas – tamsiai žalsvai mėlyna */
-  --highlight-color: #f59e0b;   /* papildoma spalva – geltona (elektra) */
-  --nav-hover-color: #0f766e;
+  --heading-color: #6a1b4d;     /* antraštės – tamsi slyvinė */
+  --accent-color: #c2185b;      /* akcentas – ryški rožinė */
+  --highlight-color: #f48fb1;   /* papildoma spalva – šviesiai rožinė */
+  --nav-hover-color: #c2185b;
 }
 
 /*--------------------------------------------------------------
@@ -84,7 +84,7 @@ h6 {
 p {
   font-size: 1.05rem;
   line-height: 1.8;
-  color: #3e4c59;
+  color: #4a3a42;
 }
 
 /*--------------------------------------------------------------
@@ -104,26 +104,24 @@ button,
   border: 2px solid var(--accent-color);
   border-radius: 8px;
   padding: 12px 32px;
-  box-shadow: 0 4px 10px rgba(15, 118, 110, 0.3);
+  box-shadow: 0 4px 10px rgba(194, 24, 91, 0.3);
   transition: 0.3s;
 }
 
-/* Užvedus pelę */
 button:hover,
 .btn:hover,
 .contact .php-email-form button[type=submit]:hover {
   color: var(--accent-color);
   background: #ffffff;
   transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(15, 118, 110, 0.35);
+  box-shadow: 0 8px 16px rgba(221, 87, 141, 0.35);
 }
 
-/* Paspaudus */
 button:active,
 .btn:active,
 .contact .php-email-form button[type=submit]:active {
   color: #ffffff;
-  background: #0b5852;
+  background: #630f31;
   transform: translateY(1px);
   box-shadow: none;
 }
@@ -144,10 +142,9 @@ main li a,
 main p a:hover,
 main li a:hover,
 .footer .credits a:hover {
-  color: var(--highlight-color);
+  color: var(--heading-color);
   border-bottom-color: var(--accent-color);
 }
-
 
 /*--------------------------------------------------------------
 # 4. Tarpai ir turinio blokai („Apie“, „Patirtis“, „Atlikti darbai“)
@@ -183,20 +180,20 @@ main li a:hover,
   background: #ffffff;
   border-radius: 16px;
   padding: 30px;
-  box-shadow: 0 6px 24px rgba(18, 53, 91, 0.12);
+  box-shadow: 0 6px 24px rgba(106, 27, 77, 0.12);
 }
 
 .about img {
   border-radius: 16px;
   border: 4px solid var(--accent-color);
-  box-shadow: 0 6px 24px rgba(18, 53, 91, 0.15);
+  box-shadow: 0 6px 24px rgba(106, 27, 77, 0.15);
 }
 
 .resume .resume-item {
   background: #ffffff;
   border-radius: 0 12px 12px 0;
   padding: 20px 20px 20px 30px;
-  box-shadow: 0 4px 16px rgba(18, 53, 91, 0.1);
+  box-shadow: 0 4px 16px rgba(106, 27, 77, 0.1);
 }
 
 .resume .resume-item:last-child {
@@ -205,8 +202,8 @@ main li a:hover,
 
 .portfolio .portfolio-item img {
   border-radius: 12px;
-  border: 1px solid #d9e2ec;
-  box-shadow: 0 4px 16px rgba(18, 53, 91, 0.12);
+  border: 1px solid #f8bbd0;
+  box-shadow: 0 4px 16px rgba(106, 27, 77, 0.12);
 }
 
 .services .table,
@@ -214,21 +211,21 @@ main li a:hover,
 .services iframe {
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 16px rgba(18, 53, 91, 0.12);
+  box-shadow: 0 4px 16px rgba(106, 27, 77, 0.12);
 }
 
 /*--------------------------------------------------------------
-# 5. Komponentai: navigacijos meniu, progreso juostos, „į viršų“ mygtukas
+# 5. Komponentai: navigacijos meniu ir progreso juostos
 --------------------------------------------------------------*/
 
 /* 1 komponentas: navigacijos meniu */
 .navmenu a,
 .navmenu a:focus {
-  background: #12355b;
+  background: #6a1b4d;
   color: #ffffff;
   border-radius: 14px;
   border: 2px solid var(--highlight-color);
-  box-shadow: 0 4px 12px rgba(18, 53, 91, 0.3);
+  box-shadow: 0 4px 12px rgba(106, 27, 77, 0.3);
 }
 
 .navmenu a:hover,
@@ -236,14 +233,14 @@ main li a:hover,
 .navmenu .active:focus,
 .navmenu li:hover > a {
   background: var(--highlight-color);
-  color: #12355b;
-  border-color: #12355b;
+  color: #6a1b4d;
+  border-color: #6a1b4d;
 }
 
 /* 2 komponentas: progreso juostos (Įgūdžiai) */
 .skills .progress-bar-wrap {
   height: 16px;
-  background: #e4e7eb;
+  background: #fce4ec;
   border-radius: 20px;
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.12);
 }
@@ -258,9 +255,9 @@ main li a:hover,
 .scroll-top {
   background: var(--highlight-color);
   border-radius: 12px;
-  border: 2px solid #12355b;
+  border: 2px solid #6a1b4d;
 }
 
 .scroll-top i {
-  color: #12355b;
+  color: #6a1b4d;
 }
