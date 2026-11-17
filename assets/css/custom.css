@@ -18,6 +18,12 @@
   --accent-color: #c2185b;      /* akcentas – ryški rožinė */
   --highlight-color: #f48fb1;   /* papildoma spalva – šviesiai rožinė */
   --nav-hover-color: #c2185b;
+  --background-color: #fff5f8;   /* svetainės fonas – šviesiai rožinis */
+}
+
+/* Šviesesnės skiltys (pvz., puslapio apačia) */
+.light-background {
+  --background-color: #fce4ec;
 }
 
 /*--------------------------------------------------------------
