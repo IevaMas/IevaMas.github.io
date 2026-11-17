@@ -502,3 +502,24 @@ main li a:hover,
 .section-title  h2::after {
   animation: bruksnioPulsavimas 3s ease-in-out infinite;
 }
+
+/*--------------------------------------------------------------
+# LD10 PAPILDOMA. Animuotas gradientinis „Paslaugų“ fonas
+--------------------------------------------------------------*/
+@keyframes gradientoJudejimas {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.services {
+  background: linear-gradient(-45deg, #fff5f8, #fce4ec, #f8bbd0, #fde7ef);
+  background-size: 400% 400%;
+  animation: gradientoJudejimas 12s ease infinite;
+}
