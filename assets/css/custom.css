@@ -523,3 +523,69 @@ main li a:hover,
   background-size: 400% 400%;
   animation: gradientoJudejimas 12s ease infinite;
 }
+
+/*--------------------------------------------------------------
+# LD10 PAPILDOMA. Animuotos CSS figūros „Apie“ skiltyje
+--------------------------------------------------------------*/
+.about {
+  position: relative;
+}
+
+/* Turinys visada virš figūrų */
+.about .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* 1 figūra: apskritimas, kuris plaukioja (floating) */
+@keyframes apskritimoPlaukiojimas {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(20px, -25px);
+  }
+  50% {
+    transform: translate(40px, 0);
+  }
+  75% {
+    transform: translate(20px, 25px);
+  }
+}
+
+.about::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 3%;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: var(--highlight-color);
+  opacity: 0.35;
+  animation: apskritimoPlaukiojimas 8s ease-in-out infinite;
+}
+
+/* 2 figūra: trikampis, kuris sukasi (rotating) */
+@keyframes trikampioSukimasis {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.about::after {
+  content: "";
+  position: absolute;
+  bottom: 40px;
+  right: 4%;
+  width: 0;
+  height: 0;
+  border-left: 45px solid transparent;
+  border-right: 45px solid transparent;
+  border-bottom: 78px solid var(--accent-color);
+  opacity: 0.25;
+  animation: trikampioSukimasis 10s linear infinite;
+}
