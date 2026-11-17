@@ -1,0 +1,88 @@
+/*--------------------------------------------------------------
+# custom.css – Ievos Masiliauskaitės CV svetainės stiliai
+# Šis failas įkeliamas PO main.css, todėl jo taisyklės
+# perrašo šablono stilius.
+--------------------------------------------------------------*/
+
+/* Nauji šriftai iš Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Nunito:wght@400;600;700&display=swap");
+
+/* Naujos spalvos ir šriftai (perrašo main.css kintamuosius) */
+:root {
+  --default-font: "Nunito", sans-serif;
+  --heading-font: "Montserrat", sans-serif;
+  --nav-font: "Montserrat", sans-serif;
+
+  --default-color: #1f2933;     /* pagrindinis tekstas */
+  --heading-color: #12355b;     /* antraštės – tamsiai mėlyna */
+  --accent-color: #0f766e;      /* akcentas – tamsiai žalsvai mėlyna */
+  --highlight-color: #f59e0b;   /* papildoma spalva – geltona (elektra) */
+  --nav-hover-color: #0f766e;
+}
+
+/*--------------------------------------------------------------
+# 2. Šriftai (Typography)
+--------------------------------------------------------------*/
+body {
+  font-family: var(--default-font);
+  color: var(--default-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--heading-color);
+  letter-spacing: 0.5px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--accent-color);
+}
+
+h6 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Skilčių antraštės */
+.section-title h2 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.section-title h2::after {
+  background: var(--highlight-color);
+  width: 80px;
+  height: 4px;
+}
+
+/* Pastraipos */
+p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #3e4c59;
+}
