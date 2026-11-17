@@ -86,3 +86,64 @@ p {
   line-height: 1.8;
   color: #3e4c59;
 }
+
+/*--------------------------------------------------------------
+# 3. Mygtukai ir nuorodos
+--------------------------------------------------------------*/
+
+/* Mygtukai */
+button,
+.btn,
+.contact .php-email-form button[type=submit] {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffffff;
+  background: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  border-radius: 8px;
+  padding: 12px 32px;
+  box-shadow: 0 4px 10px rgba(15, 118, 110, 0.3);
+  transition: 0.3s;
+}
+
+/* Užvedus pelę */
+button:hover,
+.btn:hover,
+.contact .php-email-form button[type=submit]:hover {
+  color: var(--accent-color);
+  background: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(15, 118, 110, 0.35);
+}
+
+/* Paspaudus */
+button:active,
+.btn:active,
+.contact .php-email-form button[type=submit]:active {
+  color: #ffffff;
+  background: #0b5852;
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+/* Nuorodos tekste */
+a {
+  color: var(--accent-color);
+}
+
+main p a,
+main li a,
+.footer .credits a {
+  font-weight: 700;
+  border-bottom: 2px solid var(--highlight-color);
+  padding-bottom: 1px;
+}
+
+main p a:hover,
+main li a:hover,
+.footer .credits a:hover {
+  color: var(--highlight-color);
+  border-bottom-color: var(--accent-color);
+}
