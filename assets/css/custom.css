@@ -267,3 +267,108 @@ main li a:hover,
 .scroll-top i {
   color: #6a1b4d;
 }
+
+/*--------------------------------------------------------------
+# PAPILDOMA UŽDUOTIS
+--------------------------------------------------------------*/
+
+/* 1. Sąrašai „Paslaugų“ skiltyje */
+
+/* Nenumeruotas sąrašas – savi ženkleliai su ::before */
+.services ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.services ul > li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+.services ul > li::before {
+  content: "♥";
+  color: var(--accent-color);
+  position: absolute;
+  left: 0;
+}
+
+/* Įdėtinis sąrašas – kitoks stilius */
+.services ul ul {
+  margin-top: 10px;
+  padding-left: 15px;
+  border-left: 3px solid var(--highlight-color);
+}
+
+.services ul ul > li {
+  font-size: 0.95rem;
+  color: var(--accent-color);
+  padding-left: 22px;
+}
+
+.services ul ul > li::before {
+  content: "▸";
+  color: var(--accent-color);
+}
+
+/* Numeruotas sąrašas – skaitikliai (counters) */
+.services ol {
+  list-style: none;
+  padding-left: 0;
+  counter-reset: zingsnis;
+}
+
+.services ol > li {
+  counter-increment: zingsnis;
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: 14px;
+  line-height: 32px;
+}
+
+.services ol > li::before {
+  content: counter(zingsnis);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--accent-color);
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  line-height: 32px;
+}
+
+/* 2. Lentelė */
+.services .table th,
+.services .table td {
+  padding: 14px 18px;
+  text-align: center;
+  vertical-align: middle;
+  box-shadow: none;
+}
+
+/* Antraštinė eilutė */
+.services .table thead th {
+  background: var(--accent-color);
+  color: #ffffff;
+  font-family: var(--heading-font);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* „Zebra“ stilius */
+.services .table tbody tr:nth-child(odd) td {
+  background: #ffffff;
+}
+
+.services .table tbody tr:nth-child(even) td {
+  background: #fde7ef;
+}
+
+/* :hover efektas eilutei */
+.services .table tbody tr:hover td {
+  background: #f8bbd0;
+}
