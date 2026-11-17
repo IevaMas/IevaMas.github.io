@@ -499,4 +499,6 @@ main li a:hover,
   }
 }
 
-.section-title
+.section-title  h2::after {
+  animation: bruksnioPulsavimas 3s ease-in-out infinite;
+}
